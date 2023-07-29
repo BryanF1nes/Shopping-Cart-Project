@@ -32,6 +32,10 @@ a {
     font-size: 32px;
     font-weight: 700;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .link-items {
@@ -64,6 +68,10 @@ a {
     justify-content: center;
 }
 
+.paw {
+    margin: 0;
+}
+
 .homepage-wrapper {
     z-index: 1;
     display: flex;
@@ -71,7 +79,6 @@ a {
     min-width: 800px;
     min-height: 50%;
     justify-content: space-between;
-    /* background-color: rgba(0, 0, 0, 0.15); */
     border-radius: 50px;
     gap: 3rem;
     transition: 800ms ease-in;
@@ -79,6 +86,13 @@ a {
 
 .homepage-wrapper:hover {
     background-color: rgba(0, 0, 0, 0.45);
+}
+
+.homepage-wrapper h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
 }
 
 #shop-btn {
