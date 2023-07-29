@@ -1,0 +1,103 @@
+/* Overall and Utilities */
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.BODY {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+    min-height: 100px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+.link-items {
+    display: flex;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+.link-items a {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin: 0;
+    border: 1px solid transparent;
+    transition: 500ms ease-out;
+}
+
+.link-items a:hover {
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+/* Home page */
+.homepage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-wrapper {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    min-width: 800px;
+    min-height: 50%;
+    justify-content: space-between;
+    /* background-color: rgba(0, 0, 0, 0.15); */
+    border-radius: 50px;
+    gap: 3rem;
+    transition: 800ms ease-in;
+}
+
+.homepage-wrapper:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+#shop-btn {
+    border-radius: 0;
+}
+
+#shop-btn  a {
+    font-size: 18px;
+    letter-spacing: 0.35rem;
+    font-weight: 300;
+    color: white;
+    padding: 10px;
+}
+
+/* Home page VIDEO */
+#video {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
