@@ -4,6 +4,26 @@ import storedata from '../data'
 
 const Shop = () => {
 
+  const renderItems = () => {
+    return storedata.map((items) => {
+      return (
+        <Card key={items.id}
+        id={items.id}
+        type={items.type}
+        imageUrl={items.imageUrl}
+        name={items.name}
+        description={items.description}
+        price={items.price}
+        />
+      )
+    })
+  }
+
+  const handleFilter = (e) => {
+    // if selected filter matches the item type
+    // loop over the data and only display the items that contain that type
+  }
+
   return (
     <div className="wrapper">
       <div className="header">
@@ -20,16 +40,7 @@ const Shop = () => {
         </div>
       </div>
       <div className="shop-grid">
-      {storedata.map((items) => {
-        return (
-          <Card key={items.id}
-          imageUrl={items.imageUrl}
-          name={items.name}
-          description={items.description}
-          price={items.price}
-          />
-        )
-      })}
+      {renderItems()}
       </div>
     </div>
   )

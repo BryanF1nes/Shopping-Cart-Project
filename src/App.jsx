@@ -5,13 +5,6 @@ import storeData from './data';
 import { useEffect, useState } from 'react';
 
 function App() {
-  // const [data, setData] = useState(storeData)
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-
-  //   }, 2000)
-  // })
 
   return (
     <div>
