@@ -60,6 +60,31 @@ a {
     border-radius: 7px;
 }
 
+/* Cart Span */
+.cart-container {
+    background-color: rgb(211, 62, 62);
+    color: white;
+    font-size: 15px;
+    padding: 1px 5px;
+    border-radius: 55%;
+    position: absolute;
+    top: 20px;
+}
+
+.cart-low {
+    background-color: rgb(211, 62, 62);
+    color: white;
+    font-size: 16px;
+    padding: 0px 8px;
+    border-radius: 55%; 
+    position: absolute;
+    top: 20px;
+}
+
+.shopping-bag {
+    height: 24px;
+}
+
 /* Home page */
 .homepage {
     height: 80vh;
@@ -150,6 +175,7 @@ select {
     grid-template-rows: repeat(3, auto);
     justify-items: center;
     align-items: center;
+    margin: 10px;
     gap: 1rem;
     padding: 20px 20px 20px 20px;
     height: 100;
@@ -286,17 +312,13 @@ select {
 .left-pane {
     display: grid;
     justify-content: start;
-    padding: 10px 30px;
-    background-color: black;
-    color: white;
+    padding: 10px 20px;
     height: 90%;
     width: 55%;
     margin: 0;
 }
 
 .right-pane {
-    background-color: black;
-    color: white;
     height: 90%;
     margin: 0;
     display: flex;
